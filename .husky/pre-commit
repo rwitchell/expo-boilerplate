@@ -1,0 +1,8 @@
+# Husky enhances your commits and more
+#  Automatically lint your commit messages, code, and run tests upon committing or pushing.
+
+npx lint-staged
+
+yarn mobile:test
+
+yarn e2e:test --include-tags=smokeTest

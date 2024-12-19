@@ -1,0 +1,7 @@
+appId: com.anonymous.boilerapp
+---
+- launchApp
+- tapOn: 'Login.*'
+- tapOn: 'Register.*'
+- tapOn: '.*File-based routing'
+- assertVisible: 'This app has two screens.*'

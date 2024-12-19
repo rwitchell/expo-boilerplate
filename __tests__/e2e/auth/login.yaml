@@ -1,0 +1,6 @@
+appId: com.anonymous.boilerapp
+---
+- launchApp
+- tapOn: 'Login.*'
+- tapOn: '.*First Name'
+- assertVisible: 'This app has two screens.*'

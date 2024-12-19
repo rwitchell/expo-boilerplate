@@ -1,0 +1,8 @@
+appId: com.anonymous.boilerapp
+
+# https://blog.mobile.dev/maestro-best-practices-structuring-your-test-suite-54ec390c5c82
+tags:
+  - smokeTest
+---
+- launchApp
+- assertVisible: 'Open up the code.*'

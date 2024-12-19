@@ -1,0 +1,8 @@
+appId: com.anonymous.boilerapp
+tags:
+  - smokeTest
+---
+- launchApp
+- tapOn: 'Tab Two.*'
+- assertVisible: '.*\/two\.tsx.*'
+- assertNotVisible: 'two.tsx'
