@@ -10,6 +10,7 @@ const config = {
   trailingComma: 'all',
   plugins: [
     'prettier-plugin-packagejson',
+    // 'prettier-plugin-tailwindcss'
   ],
 }
 
