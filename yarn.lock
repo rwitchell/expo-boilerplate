@@ -1436,9 +1436,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/fingerprint@npm:0.11.4":
-  version: 0.11.4
-  resolution: "@expo/fingerprint@npm:0.11.4"
+"@expo/fingerprint@npm:0.11.6":
+  version: 0.11.6
+  resolution: "@expo/fingerprint@npm:0.11.6"
   dependencies:
     "@expo/spawn-async": "npm:^1.7.2"
     arg: "npm:^5.0.2"
@@ -1452,7 +1452,7 @@ __metadata:
     semver: "npm:^7.6.0"
   bin:
     fingerprint: bin/cli.js
-  checksum: 10c0/426e9c3a0f3742f615aecabcc06cdc94b84e908a6302664fea1d13810121e9ee32a5dfabfc1fbb310a9b53997c7595289b1d4b027a0fc60e0c0917a48158899f
+  checksum: 10c0/d895b3337c517af645e1f26b4fba9137429129cf5bee29965248b15d2f5c9b4a387918bc8d6ec195a6a10d99ff2663d087c8402bc11aa255da9f367bd6453366
   languageName: node
   linkType: hard
 
@@ -3658,7 +3658,7 @@ __metadata:
     eslint-plugin-package-json: "npm:^0.18.0"
     eslint-plugin-prettier: "npm:^5.2.1"
     eslint-plugin-react: "npm:^7.37.2"
-    expo: "npm:52.0.20"
+    expo: "npm:52.0.23"
     expo-constants: "npm:17.0.3"
     expo-font: "npm:13.0.2"
     expo-linking: "npm:7.0.3"
@@ -5609,15 +5609,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo@npm:52.0.20":
-  version: 52.0.20
-  resolution: "expo@npm:52.0.20"
+"expo@npm:52.0.23":
+  version: 52.0.23
+  resolution: "expo@npm:52.0.23"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
     "@expo/cli": "npm:0.22.7"
     "@expo/config": "npm:~10.0.6"
     "@expo/config-plugins": "npm:~9.0.12"
-    "@expo/fingerprint": "npm:0.11.4"
+    "@expo/fingerprint": "npm:0.11.6"
     "@expo/metro-config": "npm:0.19.8"
     "@expo/vector-icons": "npm:^14.0.0"
     babel-preset-expo: "npm:~12.0.4"
@@ -5646,7 +5646,7 @@ __metadata:
       optional: true
   bin:
     expo: bin/cli
-  checksum: 10c0/9352f8a57b43c7e877d648281250f5af7b49cc50b02b4a9e73284e88528b7b939ba56cc199e33ecc209d55b7b39e9966de8724107398fdf93b23903d8a76bd98
+  checksum: 10c0/0847a5eb4957bd1e060d4712cf5efdd69307ee86fafa3ea082779d8a38c3e82547571447e1f57ee05c2e779072d9f6b0880f6cf14a2011d46202ebf72ea95295
   languageName: node
   linkType: hard
 
