@@ -3678,7 +3678,7 @@ __metadata:
     react: "npm:18.3.1"
     react-dom: "npm:19.0.0"
     react-native: "npm:0.76.5"
-    react-native-reanimated: "npm:3.16.5"
+    react-native-reanimated: "npm:3.16.7"
     react-native-safe-area-context: "npm:4.12.0"
     react-native-screens: "npm:4.4.0"
     react-native-web: "npm:0.19.13"
@@ -9911,9 +9911,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-reanimated@npm:3.16.5":
-  version: 3.16.5
-  resolution: "react-native-reanimated@npm:3.16.5"
+"react-native-reanimated@npm:3.16.7":
+  version: 3.16.7
+  resolution: "react-native-reanimated@npm:3.16.7"
   dependencies:
     "@babel/plugin-transform-arrow-functions": "npm:^7.0.0-0"
     "@babel/plugin-transform-class-properties": "npm:^7.0.0-0"
@@ -9930,7 +9930,7 @@ __metadata:
     "@babel/core": ^7.0.0-0
     react: "*"
     react-native: "*"
-  checksum: 10c0/33c909a741bbe33fcc31e28105ba9f3c6c47a0f487310c08cd65ec7d188292013a44da75226b08f59ec5a93ae8f0baee77cbecb2f411ef61e5d341d2dede46dc
+  checksum: 10c0/007cbec677d036e8d2c0744dfff52282ddfb9a89bb3eee82e7eaebcf731b07505e241af04ac87a38da038a18e380b32ec8a55263d1bb8559274d1c077b0b1d25
   languageName: node
   linkType: hard
 
