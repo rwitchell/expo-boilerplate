@@ -1,4 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-require-imports,no-undef
+const withStorybook = require("@storybook/react-native/metro/withStorybook")
+// eslint-disable-next-line @typescript-eslint/no-require-imports,no-undef
 const { getDefaultConfig } = require('expo/metro-config')
 // eslint-disable-next-line @typescript-eslint/no-require-imports,no-undef
 const path = require('path')
@@ -20,4 +22,4 @@ config.resolver.nodeModulesPaths = [
 ]
 
 // eslint-disable-next-line no-undef
-module.exports = config
+module.exports = withStorybook(config)
