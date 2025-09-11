@@ -71,6 +71,5 @@
   },
   "devDependencies": {
     "jest-expo": "52.0.2"
-  },
-  "packageManager": "yarn@4.5.3"
+  }
 }
