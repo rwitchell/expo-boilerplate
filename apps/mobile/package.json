@@ -81,6 +81,7 @@
     "react-native-web": "^0.20.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-class-static-block": "^7.28.3",
     "@storybook/addon-docs": "^9.1.5",
     "@storybook/addon-ondevice-actions": "^9.1.2",
     "@storybook/addon-ondevice-backgrounds": "^9.1.2",
@@ -91,6 +92,7 @@
     "@storybook/react-vite": "^9.1.5",
     "@types/node": "^24.3.1",
     "babel-loader": "^8.4.1",
+    "babel-plugin-react-docgen-typescript": "^1.5.1",
     "eslint-plugin-storybook": "^9.1.5",
     "jest-expo": "~53.0.10",
     "react-native-gesture-handler": "^2.28.0",

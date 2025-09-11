@@ -79,7 +79,7 @@ export const StorybookToggle: React.FC<StorybookToggleProps> = ({ children }) =>
             <View style={styles.toggleContainer}>
                 <TouchableOpacity style={styles.toggleButton} onPress={toggleStorybook}>
                     <Image
-                        source={require('@/assets/icon-storybook.png')}
+                        source={require('@/assets/images/icon-storybook.png')}
                         style={{width: 15, height: 15, marginRight: 10 }}
                     />
                     <Text style={styles.toggleButtonText}>Storybook</Text>

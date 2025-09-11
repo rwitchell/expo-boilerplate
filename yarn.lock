@@ -150,7 +150,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-create-class-features-plugin@npm:^7.27.1":
+"@babel/helper-create-class-features-plugin@npm:^7.27.1, @babel/helper-create-class-features-plugin@npm:^7.28.3":
   version: 7.28.3
   resolution: "@babel/helper-create-class-features-plugin@npm:7.28.3"
   dependencies:
@@ -664,6 +664,18 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 10c0/cc0662633c0fe6df95819fef223506ddf26c369c8d64ab21a728d9007ec866bf9436a253909819216c24a82186b6ccbc1ec94d7aaf3f82df227c7c02fa6a704b
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-class-static-block@npm:^7.28.3":
+  version: 7.28.3
+  resolution: "@babel/plugin-transform-class-static-block@npm:7.28.3"
+  dependencies:
+    "@babel/helper-create-class-features-plugin": "npm:^7.28.3"
+    "@babel/helper-plugin-utils": "npm:^7.27.1"
+  peerDependencies:
+    "@babel/core": ^7.12.0
+  checksum: 10c0/8c922a64f6f5b359f7515c89ef0037bad583b4484dfebc1f6bc1cf13462547aaceb19788827c57ec9a2d62495f34c4b471ca636bf61af00fdaea5e9642c82b60
   languageName: node
   linkType: hard
 
@@ -4230,6 +4242,17 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.4.0 || ^8.0.0-0 <8.0.0
   checksum: 10c0/63aa8ed716df6a9277c6ab42b887858fa9f57a70cc1d0ae2b91bdf081e45d4502848cba306fb60b02f59f99b32fd02ff4753b373cac48ccdac9b7d19dd56f06d
+  languageName: node
+  linkType: hard
+
+"babel-plugin-react-docgen-typescript@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "babel-plugin-react-docgen-typescript@npm:1.5.1"
+  dependencies:
+    react-docgen-typescript: "npm:^1.20.4"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 10c0/37bc452a6721c76ffaf4f97826fe0fbc8f5068917f952d9574e71066cb04e902e22a4918410327aaecaee019f64f68ca88bf0f5df8aee09b2f3ad69dba4cbf7b
   languageName: node
   linkType: hard
 
@@ -9437,6 +9460,7 @@ __metadata:
   resolution: "mobile-app@workspace:apps/mobile"
   dependencies:
     "@babel/core": "workspace:."
+    "@babel/plugin-transform-class-static-block": "npm:^7.28.3"
     "@expo/vector-icons": "npm:^14.1.0"
     "@gorhom/bottom-sheet": "npm:^5.2.6"
     "@react-native-async-storage/async-storage": "npm:^2.2.0"
@@ -9454,6 +9478,7 @@ __metadata:
     "@storybook/react-vite": "npm:^9.1.5"
     "@types/node": "npm:^24.3.1"
     babel-loader: "npm:^8.4.1"
+    babel-plugin-react-docgen-typescript: "npm:^1.5.1"
     eslint-plugin-storybook: "npm:^9.1.5"
     expo: "npm:^53.0.0"
     expo-constants: "npm:~17.1.7"
@@ -10470,12 +10495,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-docgen-typescript@npm:^2.2.2":
-  version: 2.4.0
-  resolution: "react-docgen-typescript@npm:2.4.0"
+"react-docgen-typescript@npm:2.2.2":
+  version: 2.2.2
+  resolution: "react-docgen-typescript@npm:2.2.2"
   peerDependencies:
     typescript: ">= 4.3.x"
-  checksum: 10c0/18e3e1c80d28abcdd72e62261d2f70b0904d9b088f9c2ebe485ffee5e46f5735208bc174a20ed2772112b3ca6432b5f3d5f0ac345872fe76e541f84543e49e50
+  checksum: 10c0/d31a061a21b5d4b67d4af7bc742541fd9e16254bd32861cd29c52565bc2175f40421a3550d52b6a6b0d0478e7cc408558eb0060a0bdd2957b02cfceeb0ee1e88
   languageName: node
   linkType: hard
 
