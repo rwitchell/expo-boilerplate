@@ -25,9 +25,9 @@
     "**/*": "prettier --ignore-unknown --write"
   },
   "dependencies": {
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "react-native": "0.79.5"
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "react-native": "0.81.4"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -39,7 +39,7 @@
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/jest": "^29.5.14",
     "@types/lodash": "^4.17.13",
-    "@types/react": "18.3.12",
+    "@types/react": "~19.1.10",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-package-json": "^0.18.0",
@@ -52,7 +52,7 @@
     "lodash": "^4.17.21",
     "prettier": "^3.3.3",
     "prettier-plugin-packagejson": "^2.5.5",
-    "typescript": "5.3.3",
+    "typescript": "~5.9.2",
     "typescript-eslint": "^8.15.0"
   },
   "packageManager": "yarn@4.9.4",
