@@ -3,6 +3,9 @@ import { useState } from 'react';
 import { Linking, StyleSheet, Text, View } from 'react-native';
 
 import { Header } from './Header';
+import { Input } from '@/components/ui/input'
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Label } from "@/components/ui/label"
 
 export const Page = () => {
   const [user, setUser] = useState<{ name: string } | undefined>();
@@ -38,7 +41,7 @@ export const Page = () => {
           needing to navigate to them in your app. Here are some handy patterns for managing page
           data in Storybook:
         </Text>
-        <View>
+        <View className={'border-4 border-blue-400'}>
           <Text>
             Use a higher-level connected component. Storybook helps you compose such data from the
             "args" of child component stories
@@ -48,8 +51,25 @@ export const Page = () => {
             using Storybook.
           </Text>
         </View>
+
+
+        <RadioGroup defaultValue="comfortable">
+          <View className="flex flex-row items-center gap-3">
+            <RadioGroupItem value="default" id="r1" />
+            <Label htmlFor="r1">Default</Label>
+          </View>
+          <View className="flex flex-row items-center gap-3">
+            <RadioGroupItem value="comfortable" id="r2" />
+            <Label htmlFor="r2">Comfortable</Label>
+          </View>
+          <View className="flex flex-row items-center gap-3">
+            <RadioGroupItem value="compact" id="r3" />
+            <Label htmlFor="r3">Compact</Label>
+          </View>
+        </RadioGroup>
         <Text style={styles.p}>
           Get a guided tutorial on component-driven development at{' '}
+          <Input className={'border-4 border-green-200'} placeholder={'hello'}/>
           <Text
             style={styles.a}
             role="link"

@@ -24,7 +24,7 @@ let config = getDefaultConfig(projectRoot)
 //     path.resolve(monorepoRoot, 'node_modules'),
 // ]
 
-config = withNativeWind(config, {input: './global.css'})
+config = withNativeWind(config, {input: './global.css', inlineRem: 16})
 config = withStorybook(config)
 
 // eslint-disable-next-line no-undef

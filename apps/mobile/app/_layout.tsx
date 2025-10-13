@@ -9,6 +9,7 @@ import { StorybookToggle } from '@/utils/StorybookToggle'
 import 'react-native-reanimated'
 
 import { useColorScheme } from '@/components/useColorScheme'
+import { PortalHost } from '@rn-primitives/portal'
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -58,6 +59,7 @@ function RootLayoutNav() {
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
         </Stack>
+        <PortalHost />
       </ThemeProvider>
     </StorybookToggle>
   )
