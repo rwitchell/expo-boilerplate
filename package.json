@@ -25,17 +25,17 @@
     "**/*": "prettier --ignore-unknown --write"
   },
   "dependencies": {
-    "react": "19.1.1",
-    "react-dom": "19.1.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
     "react-native": "0.81.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.25.3",
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
     "@babel/preset-react": "^7.27.1",
-    "@babel/runtime": "^7.25.0",
-    "@eslint/eslintrc": "^3.2.0",
-    "@eslint/js": "^9.15.0",
+    "@babel/runtime": "^7.28.4",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.37.0",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^12.9.0",
     "@types/eslint": "^9.6.1",
