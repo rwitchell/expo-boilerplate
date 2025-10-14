@@ -21,6 +21,54 @@ const config: StorybookConfig = {
   "framework": {
     "name": getAbsolutePath('@storybook/react-native-web-vite'),
     "options": {}
+  },
+  viteFinal: async (config, { configType }) => {
+    // Configure esbuild to handle JSX in .mjs files for dev mode (optimizeDeps)
+    if (config.optimizeDeps) {
+      config.optimizeDeps.esbuildOptions = {
+        ...config.optimizeDeps.esbuildOptions,
+        loader: {
+          '.js': 'jsx',
+          '.mjs': 'jsx',
+          ...config.optimizeDeps.esbuildOptions?.loader,
+        },
+      }
+    } else {
+      config.optimizeDeps = {
+        esbuildOptions: {
+          loader: {
+            '.js': 'jsx',
+            '.mjs': 'jsx',
+          },
+        },
+      }
+    }
+
+    // Use default babel config without custom plugins to avoid conflicts
+
+    // Configure CSS processing for Tailwind
+    config.css = {
+      ...config.css,
+      postcss: {
+        plugins: [
+          require('tailwindcss')({
+            config: join(__dirname, '../tailwind.config.js')
+          }),
+          require('autoprefixer')
+        ],
+      },
+    }
+
+    // Ensure React Native components work properly with React Native Web
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        ...config.resolve?.alias,
+        'react-native$': 'react-native-web',
+      },
+    }
+
+    return config
   }
 };
 export default config;
