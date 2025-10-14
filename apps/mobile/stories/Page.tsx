@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import { Linking, StyleSheet, Text, View } from 'react-native';
 
@@ -9,6 +9,17 @@ import { Label } from "@/components/ui/label"
 
 export const Page = () => {
   const [user, setUser] = useState<{ name: string } | undefined>();
+  const [value, setValue] = React.useState('comfortable');
+
+  function onLabelPress(label: string) {
+    return () => {
+      setValue(label);
+    };
+  }
+
+  function onValueChange(value: string) {
+    setValue(value);
+  }
 
   return (
     <View>
@@ -53,20 +64,27 @@ export const Page = () => {
         </View>
 
 
-        <RadioGroup defaultValue="comfortable">
+        <RadioGroup value={value} onValueChange={onValueChange}>
           <View className="flex flex-row items-center gap-3">
             <RadioGroupItem value="default" id="r1" />
-            <Label htmlFor="r1">Default</Label>
+            <Label htmlFor="r1" onPress={onLabelPress('default')}>
+              Default
+            </Label>
           </View>
           <View className="flex flex-row items-center gap-3">
             <RadioGroupItem value="comfortable" id="r2" />
-            <Label htmlFor="r2">Comfortable</Label>
+            <Label htmlFor="r2" onPress={onLabelPress('comfortable')}>
+              Comfortable
+            </Label>
           </View>
           <View className="flex flex-row items-center gap-3">
             <RadioGroupItem value="compact" id="r3" />
-            <Label htmlFor="r3">Compact</Label>
+            <Label htmlFor="r3" onPress={onLabelPress('compact')}>
+              Compact
+            </Label>
           </View>
         </RadioGroup>
+
         <Text style={styles.p}>
           Get a guided tutorial on component-driven development at{' '}
           <Input className={'border-4 border-green-200'} placeholder={'hello'}/>
