@@ -35,3 +35,11 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 /.idea/
+
+
+coverage/**/*
+ios/
+andriod/
+.maestro/tests/*
+apps/mobile/.maestro/tests/*
+apps/mobile/coverage/
